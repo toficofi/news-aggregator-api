@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q2pKm7oe3iDPyAr+LTjvYePW1IK1ObYx43D0D/jMZzXX1DxHGX8phVkut0sPeRDbgsAqQuAo1hTheah7sIfpyQ==",
+  "dgSpecHash": "RztrQMSvQ9xrqJRfYnASQqG0O5jJJYXmCHLOsUZr+bZe4bO60DMjUWiCYP4mrOhaT8gHAp+m48qs4IQ6Ue8OXQ==",
   "success": true,
   "projectFilePath": "D:\\git\\news-aggregator\\news-aggregator-api\\news-aggregator.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,8 @@
     "C:\\Users\\joshl\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\joshl\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\joshl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\joshl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\joshl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\joshl\\.nuget\\packages\\system.servicemodel.syndication\\5.0.0\\system.servicemodel.syndication.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
