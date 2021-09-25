@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NewsAggregator.Services;
 
 namespace NewsAggregator
 {
@@ -13,6 +14,7 @@ namespace NewsAggregator
     {
         public static void Main(string[] args)
         {
+            var reader = new FeedReader();
             CreateHostBuilder(args).Build().Run();
         }
 
