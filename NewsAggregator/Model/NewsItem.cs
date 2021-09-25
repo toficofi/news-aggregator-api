@@ -13,7 +13,7 @@ namespace NewsAggregator.Models
     {
         public string Id { get; set; }
         public NewsSource Source { get; set; }
-        public string Title { get; set;}
+        public string Headline { get; set;}
         public string Summary { get; set; }
         public DateTime Date { get; set; }
         public string Url { get; set; }

@@ -14,7 +14,6 @@ namespace NewsAggregator
     {
         public static void Main(string[] args)
         {
-            var reader = new FeedReader();
             CreateHostBuilder(args).Build().Run();
         }
 

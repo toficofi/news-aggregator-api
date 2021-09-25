@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {}
+    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {}
   },
   "projects": {
-    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {
+    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
+        "projectUniqueName": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
         "projectName": "NewsAggregator.Tests",
-        "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
+        "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
         "packagesPath": "C:\\Users\\joshl\\.nuget\\packages\\",
-        "outputPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\obj\\",
+        "outputPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
-                "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj"
+              "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
+                "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
+    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
+        "projectUniqueName": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
         "projectName": "news-aggregator",
-        "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
+        "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
         "packagesPath": "C:\\Users\\joshl\\.nuget\\packages\\",
-        "outputPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\obj\\",
+        "outputPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshl\\AppData\\Roaming\\NuGet\\NuGet.Config"
