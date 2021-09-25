@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {}
+    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {}
   },
   "projects": {
-    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
+    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
-        "projectName": "news-aggregator",
-        "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
+        "projectUniqueName": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
+        "projectName": "NewsAggregator.Tests",
+        "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
         "packagesPath": "C:\\Users\\joshl\\.nuget\\packages\\",
-        "outputPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\obj\\",
+        "outputPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,13 +38,25 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Swashbuckle.AspNetCore": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[16.9.4, )"
             },
-            "System.ServiceModel.Syndication": {
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -58,9 +70,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

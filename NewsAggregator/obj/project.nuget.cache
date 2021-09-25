@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RztrQMSvQ9xrqJRfYnASQqG0O5jJJYXmCHLOsUZr+bZe4bO60DMjUWiCYP4mrOhaT8gHAp+m48qs4IQ6Ue8OXQ==",
+  "dgSpecHash": "aZbDJbaYn6Tyf/a/nMIN5zJ3Vd83ctfq5UCO2IE51vxIYWLbLeXCyWs6QuBzIkzBc7i7LVP/MOQ1+bqrjmbNXw==",
   "success": true,
-  "projectFilePath": "D:\\git\\news-aggregator\\news-aggregator-api\\news-aggregator.csproj",
+  "projectFilePath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joshl\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\joshl\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

@@ -236,11 +236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git\\news-aggregator\\news-aggregator-api\\news-aggregator.csproj",
+      "projectUniqueName": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
       "projectName": "news-aggregator",
-      "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\news-aggregator.csproj",
+      "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
       "packagesPath": "C:\\Users\\joshl\\.nuget\\packages\\",
-      "outputPath": "D:\\git\\news-aggregator\\news-aggregator-api\\obj\\",
+      "outputPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joshl\\AppData\\Roaming\\NuGet\\NuGet.Config"
