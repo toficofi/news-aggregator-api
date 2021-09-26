@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 
-namespace NewsAggregator.Services
+namespace NewsAggregator.NewsReader
 {
     public static class NewsReaderFactory
     {

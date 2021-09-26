@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using NewsAggregator.Models;
-using NewsAggregator.Services;
+using NewsAggregator.NewsReader;
 using NewsAggregator.Settings;
 using Xunit;
 

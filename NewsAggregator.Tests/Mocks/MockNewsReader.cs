@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using NewsAggregator.Models;
+using NewsAggregator.NewsReader;
 using NewsAggregator.Services;
 
 namespace NewsAggregator.Tests.Mocks

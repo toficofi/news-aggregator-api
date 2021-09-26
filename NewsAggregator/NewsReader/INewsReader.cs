@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using NewsAggregator.Models;
 
-namespace NewsAggregator.Services 
+namespace NewsAggregator.NewsReader 
 {
     public enum NewsReaderSource
     {

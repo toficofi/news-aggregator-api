@@ -7,16 +7,12 @@ using Microsoft.Extensions.Logging;
 using NewsAggregator.Models;
 using NewsAggregator.Settings;
 
-namespace NewsAggregator.Services
+namespace NewsAggregator.NewsReader
 {
     public sealed class BBCNewsReader: INewsReader
     {
         private const string URL = "http://feeds.bbci.co.uk/news/uk/rss.xml";
         private readonly ILogger _logger;
-
-        public BBCNewsReader()
-        {
-        }
 
         public BBCNewsReader(ILogger logger) 
         {
@@ -72,7 +68,6 @@ namespace NewsAggregator.Services
                     _logger.LogInformation($"Skipping item {feedItem.Id} because it is missing Links");
                     continue;
                 }
-
 
                 var newsItem = new NewsItem
                  {

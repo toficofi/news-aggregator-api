@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {}
+    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {}
   },
   "projects": {
-    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {
+    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
+        "projectUniqueName": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
         "projectName": "NewsAggregator.Tests",
-        "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
+        "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
         "packagesPath": "C:\\Users\\joshl\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\obj\\",
+        "outputPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
-                "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj"
+              "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
+                "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
+    "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
+        "projectUniqueName": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
         "projectName": "news-aggregator",
-        "projectPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
+        "projectPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\news-aggregator.csproj",
         "packagesPath": "C:\\Users\\joshl\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\obj\\",
+        "outputPath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -116,6 +116,22 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "IFramework.EntityFrameworkCore.Blueshift.MongoDB": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

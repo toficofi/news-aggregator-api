@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using NewsAggregator.DbContexts;
 using NewsAggregator.Settings;
 
 namespace NewsAggregator
@@ -18,6 +20,7 @@ namespace NewsAggregator
     public class Startup
     {
         MongoSettings _mongoSettings;
+        NewsSettings _newsSettings;
         
         public Startup(IConfiguration configuration)
         {
@@ -31,12 +34,18 @@ namespace NewsAggregator
              _mongoSettings = new MongoSettings();
             Configuration.Bind("MongoSettings", _mongoSettings);
             services.AddSingleton(_mongoSettings);
+
+            _newsSettings = new NewsSettings();
+            Configuration.Bind("NewsSettings", _newsSettings);
+            services.AddSingleton(_newsSettings);
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             ConfigureSettings(services);
+
+            services.AddDbContext<NewsDbContext>(options => options.UseMongoDb(_mongoSettings.ConnectionString));
             
             services.AddControllers();
             services.AddSwaggerGen(c =>
