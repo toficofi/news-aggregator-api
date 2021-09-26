@@ -14,10 +14,16 @@ namespace NewsAggregator.Services
         private const string URL = "http://feeds.bbci.co.uk/news/uk/rss.xml";
         private readonly ILogger _logger;
 
-        public BBCNewsReader(ILogger<BBCNewsReader> logger) 
+        public BBCNewsReader()
+        {
+        }
+
+        public BBCNewsReader(ILogger logger) 
         {
             _logger = logger;
         }
+
+        public NewsReaderSource Source => NewsReaderSource.BBC;
 
         public bool TryReadNewsItems(out List<NewsItem> newsItems)
         {

@@ -54,6 +54,15 @@ namespace NewsAggregator.Tests
         }
         
         [Fact]
+        public void TestFactory()
+        {
+            var bbcReader = NewsReaderFactory.Create(NewsReaderSource.BBC);
+            
+            Assert.NotNull(bbcReader);
+            Assert.IsType<BBCNewsReader>(bbcReader);
+        }
+
+        [Fact]
         public void ReadsBBCNews()
         {
             var reader = new BBCNewsReader(_loggingFixture.GetLogger<BBCNewsReader>());
