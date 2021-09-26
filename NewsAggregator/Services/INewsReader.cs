@@ -5,6 +5,6 @@ namespace NewsAggregator.Services
 {
     public interface INewsReader 
     {
-        public bool TryReadNewsItems(out Dictionary<string, NewsItem> newsItems);
+        bool TryReadNewsItems(out List<NewsItem> newsItems);
     }
 }

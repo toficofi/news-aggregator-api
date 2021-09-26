@@ -19,9 +19,9 @@ namespace NewsAggregator.Services
             _logger = logger;
         }
 
-        public bool TryReadNewsItems(out Dictionary<string, NewsItem> newsItems)
+        public bool TryReadNewsItems(out List<NewsItem> newsItems)
         {
-            newsItems = new Dictionary<string, NewsItem>();
+            newsItems = null;
 
             _logger.LogInformation($"Reading BBC feed from {URL}");
 
@@ -37,9 +37,10 @@ namespace NewsAggregator.Services
             }
         }
 
-        private Dictionary<string, NewsItem> ReadNewsItems() 
+        private List<NewsItem> ReadNewsItems() 
         {
-            var newsItems = new Dictionary<string, NewsItem>();
+            var newsItems = new List<NewsItem>();
+            var idHashset = new HashSet<string>(); // keep a track of IDs we've already used so we can detect duplicates
 
             XmlReader reader = XmlReader.Create(URL);
             SyndicationFeed feed = SyndicationFeed.Load(reader);
@@ -54,6 +55,19 @@ namespace NewsAggregator.Services
 
             foreach (var feedItem in feed.Items)
             {
+                if (idHashset.Contains(feedItem.Id)) 
+                {
+                    _logger.LogInformation($"Skipping item {feedItem.Id} because it is a duplicate");
+                }
+
+                
+                if (feedItem.Links == null || feedItem.Links.Count == 0) 
+                {
+                    _logger.LogInformation($"Skipping item {feedItem.Id} because it is missing Links");
+                    continue;
+                }
+
+
                 var newsItem = new NewsItem
                  {
                     Source = newsSource,
@@ -63,15 +77,10 @@ namespace NewsAggregator.Services
                     Date = feedItem.PublishDate.UtcDateTime,
                 };
 
-                if (feedItem.Links == null || feedItem.Links.Count == 0) 
-                {
-                    _logger.LogInformation($"Skipping item {feedItem.Id} because it is missing Links");
-                    continue;
-                }
-
                 newsItem.Url = feedItem.Links[0].Uri.AbsoluteUri;
-
-                newsItems.Add(newsItem.Id, newsItem);
+                
+                idHashset.Add(feedItem.Id);
+                newsItems.Add(newsItem);
             }
 
             _logger.LogInformation($"Loaded {newsItems.Count}/{feed.Items.Count()} from feed");

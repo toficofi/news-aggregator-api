@@ -7,11 +7,11 @@ using Xunit;
 
 namespace NewsAggregator.Tests
 {
-    public class FeedReaderTest: IClassFixture<LoggingFixture>
+    public class NewsReaderTest: IClassFixture<LoggingFixture>
     {
         private readonly LoggingFixture _loggingFixture;
 
-        public FeedReaderTest(LoggingFixture loggingFixture) 
+        public NewsReaderTest(LoggingFixture loggingFixture) 
         {
             _loggingFixture = loggingFixture;
         }
@@ -43,9 +43,13 @@ namespace NewsAggregator.Tests
             Assert.NotEmpty(newsItems);
             Assert.True(newsItems.Count > 5); // We'd probably expect at least 5 news items from BBC
 
-            foreach (var kvp in newsItems) 
+            // check for duplicate IDs
+            var distinct = newsItems.GroupBy(n => n.Id);
+            Assert.Equal(newsItems.Count, distinct.Count());
+
+            foreach (var newsItem in newsItems) 
             {
-                TestNewsItem(kvp.Value);
+                TestNewsItem(newsItem);
             }
         }
         

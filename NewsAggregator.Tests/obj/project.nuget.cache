@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ySrv0v6zSCh5PHPsbXrUFJAzW1GnJp65tjdC8UA1NoM6+uRACpYxVXBuNlhzifeJ9NhlBizJj8mlfVWAT1h+vA==",
+  "dgSpecHash": "a6hBa+xh3phGeUbjctfcR2Hif+U0Ziq9cjNhWEO485BlFlmt8EHcs0f8hS1wZkZuE+bxMMwHM5axPjdaTO+b3g==",
   "success": true,
-  "projectFilePath": "D:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
+  "projectFilePath": "d:\\git\\news-aggregator\\news-aggregator-api\\NewsAggregator.Tests\\NewsAggregator.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joshl\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\joshl\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
